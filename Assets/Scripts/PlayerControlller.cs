@@ -10,7 +10,7 @@ public class PlayerController : Character
     [SerializeField] private float jumpForce = 12f;  //Force of my jump
     [SerializeField] private LayerMask groundLayer;  //Checking to see if i'm standing on the ground layer
     [SerializeField] private Transform groundCheck;  //Position of my ground check
-    [SerializeField] private float groundCheckradius = 0.2f;   //Size of my ground check
+    [SerializeField] private float groundCheckRadius = 0.2f;   //Size of my ground check
 
     private Rigidbody2D rBody; //Used to apply a force to move or jump
     private PlayerInputHandler input;  //Reads the input
@@ -27,7 +27,7 @@ public class PlayerController : Character
     private void Update()
     {
         //Perform my ground check
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckradius, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         Debug.Log(isGrounded);
     }
 

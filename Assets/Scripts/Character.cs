@@ -29,11 +29,7 @@ public class Character : MonoBehaviour
         set { currentHealth = Mathf.Clamp(value, 0, maxHealth);}
     }
 
-    public Character(float moveSpeed, int maxHealth)
-    {
-        this.moveSpeed = moveSpeed;
-        this.maxHealth = maxHealth;
-    }
+
     protected virtual void Awake()
     {
         Debug.Log("Awake in Characer.cs");
