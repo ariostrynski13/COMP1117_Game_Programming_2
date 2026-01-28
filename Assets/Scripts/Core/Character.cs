@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Character : MonoBehaviour
 {
     //Private variables
@@ -9,6 +10,7 @@ public class Character : MonoBehaviour
 
     private int currentHealth;
     private bool isDead = false;
+    protected Animator anim;
 
     //Public properties
     public float MoveSpeed
@@ -34,6 +36,7 @@ public class Character : MonoBehaviour
     {
         Debug.Log("Awake in Characer.cs");
         currentHealth = maxHealth;
+        anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(int amount)
