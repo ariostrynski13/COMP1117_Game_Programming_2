@@ -39,5 +39,14 @@ public class Enemy : Character
            
     }
 
+    public override void Die()
+    {
+        Debug.Log("Enemy has died!");
 
+        //Enemy death logic!!!
+        //==========================
+        //Award points / loot to the player
+        //Player death animation
+        //Destroy the enemy
+    }
 }
