@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6032265174156477687}
   - component: {fileID: 7312529353515130846}
   - component: {fileID: 8789181512467937520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WorldSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
